@@ -408,6 +408,20 @@ body {
   margin-left: 20px;
 }
 
+.info-comments-board__message__text {
+  margin-left: 20px;
+}
+
+.info-comments-board__message__text h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-comments-board__message__text p {
+  width: 300px;
+  height: 50px;
+}
+
 .command {
   position: absolute;
   display: inline-block;
