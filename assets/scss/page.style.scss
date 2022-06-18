@@ -1,5 +1,7 @@
-@import 'base/store.reset';
-@import 'base/store.body';
+@import 'base/page.reset';
+@import 'base/page.body';
 
-@import 'layout/store.header';
-@import 'layout/store.navbar';
+@import 'variables/page.color';
+
+@import 'layout/page.header';
+@import 'layout/page.navbar';
