@@ -136,7 +136,7 @@ table {
 body {
   margin: 2% 10%;
   width: 80%;
-  height: 300vh;
+  height: 200vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#4F76FF));
   background: linear-gradient(to bottom, #121212, #4F76FF);
 }
@@ -334,19 +334,29 @@ body {
   line-height: 1.5rem;
 }
 
-.info-comments__board {
+.info-comments-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
-  height: 100vh;
+  height: 0vh;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
 
-.info-comments__board > hr {
+.info-comments-board > hr {
   width: 90%;
-  margin: 10px;
+  margin: 0;
 }
 
-.info-comments__input, .info-comments__message {
+.info-comments-board__input, .info-comments-board__message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,16 +364,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  padding: 20px;
+  margin: 0;
 }
 
-.info-comments__input button, .info-comments__message button {
+.info-comments-board__input button, .info-comments-board__message button {
   width: 80px;
+  height: 40px;
   background: gray;
   border-radius: 20px;
   color: white;
@@ -372,17 +386,26 @@ body {
           box-shadow: 1px 2px 5px #474747;
 }
 
-.info-comments__input {
-  margin: 10px 0;
+.info-comments-board__input__text {
+  margin-left: 20px;
 }
 
-.info-comments input {
-  width: 100%;
-  padding: 5px 15px;
-  background: #959595;
-  border: 0 none;
+.info-comments-board__input__text h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-comments-board__input__text input {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #474747;
   cursor: text;
   border-radius: 5px;
+}
+
+.info-comments-board__input__submit {
+  margin-left: 20px;
 }
 
 .command {

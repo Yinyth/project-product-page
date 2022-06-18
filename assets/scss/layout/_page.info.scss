@@ -22,27 +22,32 @@
 	}
 }
 
-.info-comments {
-	&__board {
+.info-comments-board {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 90%;
-		height: 100vh;
+		height: 0vh;
 		background-color: rgba($color: $color-white, $alpha: 0.2);
 		border-radius: 10px;
 
 		> hr {
 			width: 90%;
-			margin: 10px;
+			margin: 0;
 		}
-	}
 
 	&__input, &__message {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: flex-start;
     align-items: center;
+		width: 80%;
+		padding: 20px;
+		margin: 0;
 
 		button {
 			width: 80px;
+			height: 40px;
 			background: gray;
 			border-radius: 20px;
 			color: $color-white;
@@ -52,17 +57,28 @@
 	}
 
 	&__input {
-		margin: 10px 0;
-	}
+		&__text {
+			margin-left: 20px;
 
-	input {
-		width: 100%;
-		padding:5px 15px;
-		background: #959595;
-		border:0 none;
-		cursor: text;
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
+			h4 {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
 
+			input {
+				width: 300px;
+				height: 50px;
+				padding: 10px;
+				// background: none;
+				border:1px solid #474747;
+				cursor: text;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+		}
+
+		&__submit {
+			margin-left: 20px;
+		}
 	}
 }
