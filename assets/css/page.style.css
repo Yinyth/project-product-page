@@ -269,6 +269,11 @@ body {
   border-radius: 10px;
 }
 
+.info-comments__board > hr {
+  width: 90%;
+  margin: 10px;
+}
+
 .info-comments__input, .info-comments__message {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +301,16 @@ body {
 }
 
 .info-comments__input {
-  margin: 10px;
+  margin: 10px 0;
+}
+
+.info-comments input {
+  width: 100%;
+  padding: 5px 15px;
+  background: #959595;
+  border: 0 none;
+  cursor: text;
+  border-radius: 5px;
 }
 
 .command {
@@ -315,8 +329,10 @@ body {
   margin-bottom: 10px;
   width: 200px;
   height: 250px;
-  border: 1px solid white;
+  border: 1px solid rgba(128, 128, 128, 0.1);
   border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
