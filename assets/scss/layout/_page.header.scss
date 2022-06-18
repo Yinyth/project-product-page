@@ -3,13 +3,36 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 40px;
+}
+
+.main-cover {
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 280px;
+	width: 280px;
+
+	&__pic1 {
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		filter: blur(5px);
+	}
+
+	&__pic2 {
+		position: absolute;
+		left: 20px;
+		top: 40px;
+		z-index: 2;
+	}
 }
 
 .main-text{
 	color: $color-white;
-	min-width: 300px;
+	width: 300px;
 	min-height: 200px;
 	justify-content: space-between;
 
@@ -39,9 +62,10 @@
 }
 
 .main-active {
-	min-width: 360px;
+	width: 380px;
 	min-height: 200px;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 
 	&__btn {
@@ -72,128 +96,3 @@
 		}
 	}
 }
-
-.info {
-	display: inline-block;
-	color: $color-white;
-	width: 75%;
-
-	> section{
-		margin-bottom: 40px;
-	}
-
-	h3{
-		font-size: 24px;
-	}
-
-	hr {
-		margin:10px 0;
-		width: 90%;
-	}
-
-	p {
-		line-height: 1.5rem;
-	}
-}
-
-.info-comments {
-	&__board {
-		width: 90%;
-		height: 100vh;
-		background-color: rgba($color: $color-white, $alpha: 0.2);
-		border-radius: 10px;
-
-		> hr {
-			width: 90%;
-			margin: 10px;
-		}
-	}
-
-	&__input, &__message {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-    align-items: center;
-
-		button {
-			width: 80px;
-			background: gray;
-			border-radius: 20px;
-			color: $color-white;
-			border: none;
-			box-shadow: 1px 2px 5px #474747;
-		}
-	}
-
-	&__input {
-		margin: 10px 0;
-	}
-
-	input {
-		width: 100%;
-		padding:5px 15px;
-		background: #959595;
-		border:0 none;
-		cursor: text;
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
-
-	}
-}
-
-.command {
-	position: absolute;
-	display: inline-block;
-	color: $color-white;
-	width: 10%;
-
-	h3{
-		font-size: 24px;
-		margin-bottom: 10px;
-	}
-}
-
-	.command-block {
-		margin-bottom: 10px;
-		width: 200px;
-		height: 250px;
-		border: 1px solid rgba($color: #808080, $alpha: 0.1);
-		border-radius: 10px;
-		box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.1);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-
-		img {
-			//margin-bottom: 10px;
-			border-radius: 10px;
-			width: 160px;
-			height: 160px;
-			position: relative;
-		}
-		a >img {
-			width: 30px;
-			height: 30px;
-		}
-
-		&__text {
-			display: flex;
-			flex-direction: row;
-			margin-top: 10px;
-			align-items: center;
-
-
-			span {
-				width: 120px;
-				flex-wrap: wrap;
-				margin-right: 10px;
-				line-height: 20px;
-
-				h4 {
-					font-weight: bold;
-				}
-			}
-
-		}
-	}
