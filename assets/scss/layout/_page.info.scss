@@ -22,79 +22,65 @@
 	}
 }
 
-.info-comments-board {
+.info-comments {
+
+	&__area {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
+		justify-self: center;
+		flex-direction: row;
 		width: 90%;
-		height: 0vh;
-		background-color: rgba($color: $color-white, $alpha: 0.2);
-		border-radius: 10px;
+		margin-top: 20px;
 
-		> hr {
-			width: 90%;
-			margin: 0;
+		&__btn {
+			margin: auto;
+			width: 80px;
+			height: 30px;
+			background: #808080;
+			border-radius: 10px;
+			color: white;
 		}
+	}
 
-	&__input, &__message {
+	textarea {
+		resize: none;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
     align-items: center;
-		width: 80%;
+		width: 60%;
 		padding: 20px;
-		margin: 0;
-
-		button {
-			width: 80px;
-			height: 40px;
-			background: gray;
-			border-radius: 20px;
-			color: $color-white;
-			border: none;
-			box-shadow: 1px 2px 5px #474747;
-		}
+		margin: auto;
+		margin-bottom: 20px;
+		background: none;
+		border: none;
+		border-radius: 10px;
+		color: white;
+		font-size: large;
 	}
 
-	&__input {
-		&__text {
-			margin-left: 20px;
-
-			h4 {
-				font-size: 20px;
-				margin-bottom: 10px;
-			}
-
-			input {
-				width: 300px;
-				height: 50px;
-				padding: 10px;
-				// background: none;
-				border:1px solid #474747;
-				cursor: text;
-				-webkit-border-radius: 5px;
-				border-radius: 5px;
-			}
-		}
-
-		&__submit {
-			margin-left: 20px;
-		}
+	ul {
+		display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    margin-left: 6%;
+    margin-top: 20px auto;
+    width: 80%;
+		flex-direction: column-reverse;
 	}
 
-	&__message {
-		&__text {
-			margin-left: 20px;
-
-			h4 {
-				font-size: 20px;
-				margin-bottom: 10px;
-			}
-
-			p {
-				width: 300px;
-				height: 50px;
-			}
-		}
+	li {
+		background-color: rgba(#ffffff, 0.2);
+		border: 1px solid white;
+		width: 100%;
+    height: auto;
+    line-height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+		margin: 4px;
 	}
 }

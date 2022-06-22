@@ -68,6 +68,25 @@
 	flex-direction: column;
 	justify-content: space-between;
 
+	.btns{
+    display: flex;
+		width: 30px;
+		margin-right: 4px;
+}
+
+	.btn{
+			background: transparent;
+			border: none;
+			//margin: 87px;
+			font-size: 30px;
+			outline: none;
+			color: grey;
+	}
+
+	.btn i:hover{
+			cursor: pointer;
+	}
+
 	&__btn {
 		display: flex;
 		align-items: flex-start;
